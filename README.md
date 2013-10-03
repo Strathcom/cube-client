@@ -1,4 +1,4 @@
 cube-client
 ===========
 
-Perl client for the Cube server by Square.
+TODO: repo is a placeholder, add the code!
