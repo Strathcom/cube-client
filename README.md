@@ -36,7 +36,7 @@ under API Reference, it's fairly well documented.
 
 ### Sending a metric
 Metrics are a "gauge" of something, for example, I just ran a loop, and want to report that the 
-loop processed `71` vehicles. I would do something like:
+loop processed `71` things. I would do something like:
 
 ```
 $client->put('thing_to_count', {'value'=>71});
@@ -102,7 +102,11 @@ To get that event back, you can:
 ```
 
 #### Types
-Types on the server `/1.0/types`
+To access the types of metrics on the server, hit `/1.0/types`.
+
+
+## Reference
+For all the information, go to the [official API reference](https://github.com/square/cube/wiki/API-Reference).
 
 
 ### TODO:
