@@ -19,6 +19,13 @@ $client->put('my_event', {'processing_time' => 1021, 'url' => '/foo/bar/'}); # a
 
 ```
 
+## Dependencies
+I tried to get `carton` working, but sometimes cpan just doesn't like me. For the time
+being, you need to install:
+
+* `HTTP::Async`
+
+
 ### Run tests
 ```
 $ perl tests/test_harness.pl
