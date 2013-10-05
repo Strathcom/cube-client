@@ -11,15 +11,15 @@ use TAP::Harness;
 
 my %args = (
   lib => [ 
-    'Cube',
-    'Cube/Transports',
+    './',
+    '../'
   ],
 );
 my $harness = TAP::Harness->new(\%args);
 my @tests = (
-  'Cube/tests/00_TestCubeClient.t',
-  'Cube/tests/01_TestHTTPTransport.t',
-  'Cube/tests/02_TestBaseTransport.t',
-  'Cube/tests/03_TestUDPTransport.t',
+  'tests/00_TestCubeClient.t',
+  'tests/01_TestHTTPTransport.t',
+  'tests/02_TestBaseTransport.t',
+  'tests/03_TestUDPTransport.t',
 );
 $harness->runtests(@tests);
